@@ -1,0 +1,117 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="A4_Stylish_Receipt" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6b3a3484-4a92-4518-b3e8-dff1388ede07">
+	<field name="customer_name" class="java.lang.String"/>
+	<field name="order_date" class="java.sql.Timestamp"/>
+	<field name="payment_method" class="java.lang.String"/>
+	<field name="total_amount" class="java.math.BigDecimal"/>
+	<field name="remarks" class="java.lang.String"/>
+	<field name="product_name" class="java.lang.String"/>
+	<field name="quantity" class="java.lang.Integer"/>
+	<field name="unit_price" class="java.math.BigDecimal"/>
+	<field name="subtotal" class="java.math.BigDecimal"/>
+	<title height="135">
+		<element kind="staticText" uuid="f8306a34-25ae-45a7-afb7-3413c4464d70" x="0" y="-10" width="555" height="30" forecolor="#FADB14" fontSize="20.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[PRINT TO BEE]]></text>
+		</element>
+		<element kind="staticText" uuid="05386c94-c2ab-41fb-bee4-e9b2c268d5b9" x="20" y="36" width="555" height="18" bold="true" hTextAlign="Center">
+			<text><![CDATA[Bldg 2 - Central Plaza Complex San Vincente Road, Brgy. Lag-on, Daet, C.N.]]></text>
+		</element>
+		<element kind="staticText" uuid="b35d8e27-25ea-414a-8e71-0d727d45afde" x="0" y="55" width="555" height="18" bold="true" hTextAlign="Center">
+			<text><![CDATA[Contact: 0939-649-0393 / 0961-931-8888]]></text>
+		</element>
+		<element kind="staticText" uuid="0f618e56-4dc1-4e07-aba4-f5b119e23fcc" x="0" y="75" width="555" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[Email: printtobee@gmail.com]]></text>
+		</element>
+		<element kind="line" uuid="629e553b-3136-47dc-afa6-3f94a70a2b35" x="0" y="100" width="555" height="1"/>
+		<element kind="image" uuid="3a4d814a-c5ae-421e-bbb5-90b627002555" x="11" y="-10" width="79" height="65">
+			<expression><![CDATA["C:\\Users\\diony\\Downloads\\printtobee.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="fa9a61d4-ad1b-4634-ac94-a24cf3173948" x="224" y="18" width="110" height="30" fontName="Freestyle Script" fontSize="12.0" bold="true">
+			<text><![CDATA[Your Digital Printing Solution]]></text>
+		</element>
+		<element kind="image" uuid="7a8e6bcf-8696-4764-b9ab-2e66a2bae7e1" x="165" y="54" width="26" height="15">
+			<expression><![CDATA["C:\\Users\\diony\\Pictures\\Screenshots\\Screenshot 2025-11-30 173542.png"]]></expression>
+		</element>
+		<element kind="image" uuid="155cd220-0596-431c-92fa-6bb9758cd89c" x="192" y="75" width="31" height="15">
+			<expression><![CDATA["C:\\Users\\diony\\Pictures\\Screenshots\\Screenshot 2025-11-30 173535.png"]]></expression>
+		</element>
+		<element kind="image" uuid="4c8caa51-a329-4d63-8ba3-091539891b96" x="104" y="36" width="34" height="13">
+			<expression><![CDATA["C:\\Users\\diony\\Pictures\\Screenshots\\Screenshot 2025-11-30 173527.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="426bf1bd-043a-4458-9950-609063cb7eb7" x="155" y="104" width="228" height="30" fontName="Freestyle Script" fontSize="18.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Acknowledgement Receipt]]></text>
+		</element>
+	</title>
+	<pageHeader height="61">
+		<element kind="staticText" uuid="4b3aa994-152c-4108-abf2-b1934176cbbe" x="0" y="0" width="230" height="20" bold="true">
+			<text><![CDATA[Customer Name:_________________________]]></text>
+		</element>
+		<element kind="textField" uuid="3192cac3-28f7-4d57-8b5e-defbf7b7adfb" x="110" y="0" width="200" height="20">
+			<expression><![CDATA[$F{customer_name}]]></expression>
+		</element>
+		<element kind="staticText" uuid="70bc796f-ab98-4f4c-b3b4-972616634abe" x="330" y="0" width="190" height="20" bold="true">
+			<text><![CDATA[Date:____________________________]]></text>
+		</element>
+		<element kind="textField" uuid="af66ae3a-93d6-486b-8573-d19a8fc4029e" x="380" y="0" width="175" height="20" pattern="yyyy-MM-dd HH:mm">
+			<expression><![CDATA[$F{order_date}]]></expression>
+		</element>
+		<element kind="staticText" uuid="82e5d4ed-1670-4911-a93c-b0ca90dcda24" x="0" y="25" width="220" height="20" bold="true">
+			<text><![CDATA[Contact No:___________________]]></text>
+		</element>
+		<element kind="line" uuid="9ac6e3ef-a02e-4bff-90e4-f739ff5fc192" x="0" y="60" width="555" height="1"/>
+	</pageHeader>
+	<columnHeader height="30">
+		<element kind="rectangle" uuid="649a0a11-7b48-4a89-962f-fb19a08fd87c" mode="Opaque" x="0" y="0" width="555" height="30" backcolor="#F7B519"/>
+		<element kind="staticText" uuid="4489374f-dec2-4e2a-befd-0754472631ea" x="10" y="5" width="60" height="20" bold="true">
+			<text><![CDATA[QTY]]></text>
+		</element>
+		<element kind="staticText" uuid="67f31858-ea7d-4d30-ab63-12010052de66" x="80" y="5" width="240" height="20" bold="true">
+			<text><![CDATA[DESCRIPTION]]></text>
+		</element>
+		<element kind="staticText" uuid="05f9d291-4a3b-411a-8333-95a39a01af21" x="330" y="5" width="100" height="20" bold="true">
+			<text><![CDATA[UNIT PRICE]]></text>
+		</element>
+		<element kind="staticText" uuid="f0de73fe-fb9e-4a98-80c7-11a35eba50cb" x="440" y="5" width="100" height="20" bold="true">
+			<text><![CDATA[AMOUNT]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="22">
+			<element kind="textField" uuid="87da4102-5ab3-48c0-b6f0-6a68adebb3f3" x="10" y="3" width="60" height="18">
+				<expression><![CDATA[$F{quantity}]]></expression>
+			</element>
+			<element kind="textField" uuid="d20b4134-e037-497a-9364-32dd28d27c81" x="80" y="3" width="240" height="18">
+				<expression><![CDATA[$F{product_name}]]></expression>
+			</element>
+			<element kind="textField" uuid="2c675b4d-31c9-4ac6-ba31-6e57c0f56ad6" x="330" y="3" width="100" height="18" pattern="#,##0.00">
+				<expression><![CDATA[$F{unit_price}]]></expression>
+			</element>
+			<element kind="textField" uuid="c364caa5-2d23-4d3e-aae6-984256946b0e" x="440" y="3" width="100" height="18" pattern="#,##0.00">
+				<expression><![CDATA[$F{subtotal}]]></expression>
+			</element>
+			<element kind="line" uuid="5fa518e0-3523-4e7b-b265-ab75068d434a" x="0" y="21" width="555" height="1"/>
+		</band>
+	</detail>
+	<summary height="120">
+		<element kind="rectangle" uuid="20886e55-36e8-4bed-88f8-ed866d21e758" mode="Opaque" x="320" y="0" width="235" height="90" backcolor="#FCAA05"/>
+		<element kind="staticText" uuid="5150cb50-246e-491d-9b45-674f40d5c8e1" x="330" y="10" width="200" height="30" bold="true">
+			<text><![CDATA[Payment Method:____________________]]></text>
+		</element>
+		<element kind="textField" uuid="54c5590b-7cc7-4267-af07-edf063fbe588" x="420" y="10" width="110" height="20">
+			<expression><![CDATA[$F{payment_method}]]></expression>
+		</element>
+		<element kind="staticText" uuid="7b81a0d3-3d96-41cc-954b-e42821ed0e7b" x="330" y="40" width="190" height="20" bold="true">
+			<text><![CDATA[TOTAL:_________________________]]></text>
+		</element>
+		<element kind="textField" uuid="62356bd9-39cb-4e7a-9206-66e0af688b34" x="400" y="40" width="130" height="20" pattern="#,##0.00">
+			<expression><![CDATA[$F{total_amount}]]></expression>
+		</element>
+		<element kind="staticText" uuid="ccfc1b41-efa9-4e91-a01c-e17f97488fa1" x="0" y="0" width="290" height="20" bold="true">
+			<text><![CDATA[Remarks:_________________________________________]]></text>
+		</element>
+		<element kind="textField" uuid="6fcfe001-5d93-439d-b956-7049eda46dab" x="70" y="0" width="230" height="60" vTextAlign="Top">
+			<expression><![CDATA[$F{remarks}]]></expression>
+		</element>
+		<element kind="line" uuid="dd10f2d9-ae91-4a7c-8c61-4489e8a7b408" x="0" y="110" width="555" height="1"/>
+	</summary>
+</jasperReport>
